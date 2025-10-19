@@ -1,0 +1,160 @@
+/* ===== ESTILOS RESPONSIVE ===== */
+
+/* Tablets y pantallas medianas */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 3.2rem;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Tablets pequeñas y móviles grandes */
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: rgba(10, 10, 10, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0;
+        backdrop-filter: blur(20px);
+        transition: var(--transition);
+        border-top: 1px solid var(--border-color);
+    }
+    
+    .nav-links.active {
+        left: 0;
+    }
+    
+    .nav-links li {
+        margin: 15px 0;
+    }
+    
+    .nav-cta {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero p {
+        font-size: 1.1rem;
+    }
+    
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .services-grid, 
+    .process-steps, 
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .service-card,
+    .process-step {
+        padding: 30px 25px;
+    }
+    
+    .contact-form {
+        padding: 30px 25px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-header {
+        margin-bottom: 50px;
+    }
+    
+    .service-card, 
+    .process-step {
+        padding: 25px 20px;
+    }
+    
+    .contact-form {
+        padding: 25px 20px;
+    }
+    
+    .hero-btns .btn {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        width: 95%;
+    }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1320px;
+    }
+    
+    .hero h1 {
+        font-size: 4.2rem;
+    }
+}
+
+/* Modo oscuro del sistema */
+@media (prefers-color-scheme: dark) {
+    /* Ya estamos en modo oscuro por defecto */
+}
+
+/* Impresión */
+@media print {
+    .background-lines,
+    .menu-toggle,
+    .btn::before {
+        display: none;
+    }
+    
+    .hero {
+        height: auto;
+        padding: 50px 0;
+    }
+    
+    .btn {
+        background: #000 !important;
+        color: #fff !important;
+        box-shadow: none !important;
+    }
+}
