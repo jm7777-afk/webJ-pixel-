@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - J-Pixel</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Fondo con líneas de conexión -->
+    <div class="background-lines" id="backgroundLines"></div>
+    
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">JP</div>
+                    <div class="logo-text">J-<span>Pixel</span></div>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="index.html#process">Proceso</a></li>
+                    <li><a href="portafolio.html">Portafolio</a></li>
+                    <li><a href="contacto.html" class="active">Contacto</a></li>
+                    <li class="nav-cta"><a href="contacto.html" class="btn">Solicitar Presupuesto</a></li>
+                </ul>
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section Contacto -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hablemos de tu Proyecto</h1>
+                <p>Estamos aquí para ayudarte a hacer realidad tu visión digital</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="contact-info-section section-bg">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Email</h3>
+                            <p>info@jpixel.com</p>
+                            <span>Respondemos en menos de 24 horas</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Teléfono</h3>
+                            <p>+34 123 456 789</p>
+                            <span>Lunes a Viernes de 9:00 a 18:00</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Oficina</h3>
+                            <p>Madrid, España</p>
+                            <span>Reuniones presenciales con cita previa</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="method-content">
+                            <h3>Horario</h3>
+                            <p>Lunes - Viernes</p>
+                            <span>9:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <div class="form-header">
+                        <h2>Solicita tu Presupuesto</h2>
+                        <p>Completa el formulario y nos pondremos en contacto contigo lo antes posible</p>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre Completo *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="company">Empresa</label>
+                                <input type="text" id="company" name="company" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Servicio de Interés *</label>
+                            <select id="service" name="service" class="form-control" required>
+                                <option value="">Selecciona un servicio</option>
+                                <option value="diseno">Diseño Web</option>
+                                <option value="desarrollo">Desarrollo Web</option>
+                                <option value="ecommerce">E-commerce</option>
+                                <option value="marketing">Marketing Digital</option>
+                                <option value="branding">Branding</option>
+                                <option value="otros">Otros</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="budget">Presupuesto Estimado</label>
+                            <select id="budget" name="budget" class="form-control">
+                                <option value="">Selecciona un rango</option>
+                                <option value="1000-3000">€1,000 - €3,000</option>
+                                <option value="3000-5000">€3,000 - €5,000</option>
+                                <option value="5000-10000">€5,000 - €10,000</option>
+                                <option value="10000+">Más de €10,000</option>
+                                <option value="indefinido">Por determinar</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Describe tu Proyecto *</label>
+                            <textarea id="message" name="message" class="form-control" rows="6" placeholder="Cuéntanos sobre tu proyecto, objetivos, timeline y cualquier detalle importante..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">
+                                Acepto la <a href="privacidad.html">Política de Privacidad</a> y los <a href="terminos.html">Términos y Condiciones</a> *
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preguntas Frecuentes -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Respuestas a las dudas más comunes sobre nuestros servicios</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Cuál es el tiempo promedio de desarrollo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo varía según la complejidad del proyecto. Un sitio web corporativo simple puede tomar 4-6 semanas, mientras que un e-commerce complejo puede requerir 8-12 semanas. Durante la consulta inicial te proporcionaremos un timeline detallado.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Incluyen hosting y dominio?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ofrecemos paquetes que incluyen hosting y dominio, pero también podemos trabajar con tu infraestructura existente. Te asesoraremos sobre la mejor opción según tus necesidades y presupuesto.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Ofrecen mantenimiento después del lanzamiento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos planes de mantenimiento que incluyen actualizaciones de seguridad, backups, soporte técnico y mejoras menores. Puedes elegir entre planes mensuales o anuales.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>¿Trabajan con empresas internacionales?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Trabajamos con clientes de todo el mundo. Utilizamos herramientas de comunicación que facilitan la colaboración remota y nos adaptamos a diferentes zonas horarias.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final -->
+    <section class="cta-final section-bg">
+        <div class="container">
+            <div class="cta-final-content">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>No dudes en contactarnos. Estamos aquí para ayudarte a hacerlo realidad.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+34123456789" class="btn">
+                        <i class="fas fa-phone"></i>
+                        Llamar Ahora
+                    </a>
+                    <a href="mailto:info@jpixel.com" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Enviar Email
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">JP</div>
+                        <div class="logo-text">J-<span>Pixel</span></div>
+                    </a>
+                    <p>Construyendo tu éxito digital, pixel a pixel.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="servicios.html#diseno">Diseño Web</a></li>
+                        <li><a href="servicios.html#desarrollo">Desarrollo</a></li>
+                        <li><a href="servicios.html#ecommerce">E-commerce</a></li>
+                        <li><a href="servicios.html#marketing">Marketing Digital</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Empresa</h3>
+                    <ul class="footer-links">
+                        <li><a href="proceso.html">Nuestro Proceso</a></li>
+                        <li><a href="portafolio.html">Portafolio</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="privacidad.html">Política de Privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 J-Pixel. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <style>
+        .contact-info-section {
+            padding: 100px 0;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .contact-method {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 25px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+
+        .method-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--accent), var(--accent-light));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: var(--primary);
+            flex-shrink: 0;
+        }
+
+        .method-content h3 {
+            color: var(--secondary);
+            margin-bottom: 8px;
+            font-size: 1.2rem;
+        }
+
+        .method-content p {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 1.1rem;
+        }
+
+        .method-content span {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .contact-form-container {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 40px;
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .form-header h2 {
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        .form-header p {
+            color: var(--text-light);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-lighter);
+            font-weight: 500;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--secondary);
+            transition: var(--transition);
+            font-size: 16px;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(255, 51, 102, 0.1);
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23ff3366'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 15px center;
+            background-size: 16px;
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            margin-top: 5px;
+        }
+
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+
+        .checkbox-group a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .checkbox-group a:hover {
+            text-decoration: underline;
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 18px;
+            font-size: 1.1rem;
+        }
+
+        .btn-submit i {
+            margin-right: 10px;
+        }
+
+        .faq-section {
+            padding: 100px 0;
+        }
+
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 15px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 25px;
+            background: var(--card-bg);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--card-hover);
+        }
+
+        .faq-question h3 {
+            color: var(--secondary);
+            margin: 0;
+            font-size: 1.1rem;
+        }
+
+        .faq-question i {
+            color: var(--accent);
+            transition: var(--transition);
+        }
+
+        .faq-answer {
+            padding: 0 25px;
+            max-height: 0;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .faq-item.active .faq-answer {
+            padding: 0 25px 25px;
+            max-height: 500px;
+        }
+
+        .faq-item.active .faq-question i {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer p {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .cta-final {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .cta-final-content h2 {
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+
+        .cta-final-content p {
+            color: var(--text-light);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-buttons .btn {
+            min-width: 180px;
+        }
+
+        .cta-buttons .btn i {
+            margin-right: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-form-container {
+                padding: 30px 25px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-method {
+                padding: 20px;
+            }
+
+            .method-icon {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+    <script>
+        // FAQ functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                
+                question.addEventListener('click', function() {
+                    // Close all other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Enhanced form validation
+            const contactForm = document.getElementById('contactForm');
+            
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    // Basic validation
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    const service = document.getElementById('service').value;
+                    const message = document.getElementById('message').value.trim();
+                    const privacy = document.getElementById('privacy').checked;
+
+                    let isValid = true;
+                    let errorMessage = '';
+
+                    if (!name) {
+                        isValid = false;
+                        errorMessage = 'Por favor, ingresa tu nombre completo.';
+                    } else if (!isValidEmail(email)) {
+                        isValid = false;
+                        errorMessage = 'Por favor, ingresa un email válido.';
+                    } else if (!service) {
+                        isValid = false;
+                        errorMessage = 'Por favor, selecciona un servicio de interés.';
+                    } else if (!message) {
+                        isValid = false;
+                        errorMessage = 'Por favor, describe tu proyecto.';
+                    } else if (!privacy) {
+                        isValid = false;
+                        errorMessage = 'Debes aceptar la política de privacidad y términos.';
+                    }
+
+                    if (!isValid) {
+                        showNotification(errorMessage, 'error');
+                        return;
+                    }
+
+                    // Simulate form submission
+                    showNotification(`¡Gracias ${name}! Hemos recibido tu mensaje y te contactaremos pronto.`, 'success');
+                    contactForm.reset();
+                });
+            }
+
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            function showNotification(message, type = 'info') {
+                // Implementation would be similar to previous examples
+                alert(message); // Simplified for this example
+            }
+        });
+    </script>
+</body>
+</html>
